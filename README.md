@@ -1,6 +1,6 @@
-###Matematiikkakone - Juha Eronen
+# Matematiikkakone - Juha Eronen
 
-##Kuvaus
+## Kuvaus
 
 Tämän harjoitustyön ideana oli luoda alakoululaisille matematiikanharjoitteluun sovellus, jossa arvotaan eri laskuja(plussa, miinus, kerto ja jako). Sovellus
 syntyi käytännöntarpeesta, jossa huomasin oman alakoululaisen harjoittelevan kokeeseen jo tehtyjä laskuja matikankirjasta. Lisäksi tein paperille uusia laskuja, joilla
