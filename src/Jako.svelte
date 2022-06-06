@@ -1,3 +1,4 @@
+<!-- koodi hyvin pitkälti samaa kuin Plussa-komponentissa, joten kommentoinnit siellä -->
 <script>
   import tulokset from './tuloksetStore';
   import Painike from './Painike.svelte';
@@ -25,7 +26,7 @@
   aj = Math.floor(Math.random() * (50 - 1) + 1);
   bj = Math.floor(Math.random() * (10 - 1) + 1);
   let cj = aj / bj;
-  cj = Math.round(cj * 100) / 100
+  cj = Math.round(cj * 100) / 100 /* pyöristää kahteen desimaaliin vastauksen tai kokonaislukuun */
   
 
   function arvoLuvut() {

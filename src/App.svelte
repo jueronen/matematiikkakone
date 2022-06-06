@@ -1,4 +1,5 @@
 <script>
+  /* importoidaan juurikomponentille lapsikomponentit, joita käytetään. */
   import Jako from './Jako.svelte';
   import Kerto from './Kerto.svelte';
   import Miinus from './Miinus.svelte';
@@ -6,27 +7,12 @@
   import Copyright from './Copyright.svelte';
   import Tuloslista from './Tuloslista.svelte';
 
-  
-
-
-
   export let yritys;
   export let sovellus;
   export let vuosi;
 
-  function tyhjenna() {
-    x = 0;
-    y = 0;
-    summa = 0;
-    z = 0;
-    k = 0;
-    erotus = 0;
-    c = 0;
-    v = 0;
-    tulos = 0;
-  }
 </script>
-
+<!-- sovelluksen juurikomponentti, jossa ei juurikaan ole muuta kuin määritellään missä kohtaan sovellusta luotuja komponentteja käytetään -->
 <main>
   <h1 id="title">MATEMATIIKKAA 1-3 LUOKALLE</h1>
   <container>
@@ -49,7 +35,7 @@
       <Tuloslista />
     </div>
   </container>
-  <Copyright {yritys} {sovellus} {vuosi} />
+  <Copyright {yritys} {sovellus} {vuosi} /> <!-- Copyright-komponentti propseilla -->
 </main>
 
 <style>

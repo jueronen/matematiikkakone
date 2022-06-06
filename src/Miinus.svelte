@@ -1,3 +1,4 @@
+<!-- koodi hyvin pitkälti samaa kuin Plussa-komponentissa, joten kommentoinnit siellä -->
 <script>
   import tulokset from './tuloksetStore';
   import Painike from './Painike.svelte';

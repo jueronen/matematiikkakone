@@ -4,7 +4,7 @@
   export let vuosi = 2022;
 </script>
 
-<footer>{sovellus} - Copyright by {yritys} {vuosi}</footer>
+<footer>{sovellus} - Copyright by {yritys} {vuosi}</footer> <!-- komponentti, jolla luodaan footer elementti sovellukseen, johon tiedot välitetään propseina. -->
 
 <style>
   footer {

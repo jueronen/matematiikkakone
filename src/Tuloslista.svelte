@@ -3,15 +3,15 @@
   import TyhjennaLista from './TyhjennaLista.svelte';
   import { scale } from 'svelte/transition';
 
-  const tyhjaaTulokset = () => tulokset.update((tulokset) => (tulokset = ''));
+  const tyhjaaTulokset = () => tulokset.update((tulokset) => (tulokset = '')); /* metodi, jolla tyhjennetään storen tulokset-taulukko */
 </script>
 
 <div class="sisalto">
   <div class="tuloslista">
     <h3>TULOSLISTA</h3>
 
-    {#if $tulokset.length > 0}
-      {#each $tulokset as tulos}
+    {#if $tulokset.length > 0} <!-- tarkistetaan onko taulukossa tavaraa ja jos on niin ajetaan each:llä tulokset ja jos ei ole tuloksia niin listassa lukee ei tuloksia. -->
+      {#each $tulokset as tulos} <!-- hyödynnetään storen automaattitilausta $-merkillä -->
         <p transition:scale>
           {tulos}
         </p>
@@ -19,7 +19,7 @@
     {:else}
       <p>Ei tuloksia</p>
     {/if}
-    <TyhjennaLista on:tyhjennaLista={tyhjaaTulokset} />
+    <TyhjennaLista on:tyhjennaLista={tyhjaaTulokset} /> <!-- Käytetään custom eventtinä luotua Tyhjennälista -komponentin eventtiä. Painiketta klikkaamalla tyhjennetään tuloslista. -->
   </div>
 </div>
 
